@@ -1,0 +1,297 @@
+.frameChild {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  max-height: 100%;
+  width: 450px;
+  object-fit: cover;
+}
+
+.formTitle,
+.sedTortorSed {
+  position: relative;
+  font-weight: 600;
+}
+.sedTortorSed {
+  font-size: var(--font-size-base);
+  font-weight: 300;
+}
+.formtitle {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.labelTitle {
+  position: relative;
+  font-weight: 300;
+}
+.forminput,
+.placeholderContentWrapper {
+  display: flex;
+  justify-content: flex-start;
+}
+.placeholderContentWrapper {
+  align-self: stretch;
+  border-radius: var(--br-8xs);
+  background-color: var(--white);
+  border: 1px solid var(--neutral-300);
+  flex-direction: row;
+  padding: var(--padding-3xs) var(--padding-mini);
+  align-items: center;
+  font-size: var(--font-size-base);
+}
+.forminput {
+  width: 370px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--gap-8xs);
+}
+.forgotPassword {
+  position: relative;
+  font-weight: 600;
+  color: var(--neutral-600);
+  cursor: pointer;
+}
+.buttonTitle {
+  position: relative;
+  font-weight: 500;
+}
+.button {
+  align-self: stretch;
+  border-radius: var(--br-8xs);
+  background-color: var(--blue-600);
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-3xs) var(--padding-xl);
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-size-base);
+  color: var(--white);
+  cursor: pointer;
+}
+.forminputParent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: 20px;
+  font-size: var(--font-size-sm);
+}
+.frameItem {
+  flex: 1;
+  position: relative;
+  border-top: 1px solid var(--neutral-200);
+  box-sizing: border-box;
+  height: 1px;
+}
+.orWrapper {
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  padding: 5px var(--padding-3xs);
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.button1,
+.lineParent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.lineParent {
+  width: 370px;
+  justify-content: flex-start;
+}
+.button1 {
+  align-self: stretch;
+  border-radius: var(--br-8xs);
+  border: 1px solid var(--neutral-600);
+  padding: var(--padding-3xs) var(--padding-xl);
+  justify-content: center;
+  font-size: var(--font-size-base);
+  color: var(--neutral-600);
+  cursor: pointer;
+}
+.formtitleParent,
+.frameParent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frameParent {
+  gap: 10px;
+  font-size: 12px;
+  color: var(--neutral-400);
+}
+.formtitleParent {
+  position: absolute;
+  top: 40px;
+  left: 490px;
+  gap: 40px;
+}
+.rectangleParent {
+  position: absolute;
+  top: 55px;
+  left: 200px;
+  border-radius: 10px;
+  background-color: var(--white);
+  width: 890px;
+  height: 530px;
+  overflow: hidden;
+}
+.loginregister {
+  position: relative;
+  background-color: var(--neutral-100);
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  text-align: left;
+  font-size: 22px;
+  color: var(--neutral-800);
+  font-family: var(--font-poppins);
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 1200px) {
+  .loginregister {
+    /* Adjust font-size or padding if needed */
+   width: 100%;
+   left: 1px;
+   font-size: 18px;
+   
+  }
+  .rectangleParent{
+    left: 50px;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .formtitleParent{
+    position: absolute;
+  top: 200px;
+  left: 20px;
+  gap: 1px;
+  font-size: 16px;
+
+  }
+  .forminputParent{
+    height: 80%;
+  }
+  .frameChild{
+    position: absolute;
+  height: 50%;
+  top: 0;
+  bottom: 0;
+  right: 1000px;
+  height: 30%;
+  max-height: 100%;
+  width: 100%;
+  text-align: left;
+  object-fit: cover;
+  display: flex;
+  flex-direction: column;
+} 
+.frameParent {
+  /* Adjust gap or font-size if needed */
+  font-size: 12px;
+}
+
+  }
+
+
+
+@media screen and (max-width: 768px) {
+  .forminputParent {
+    /* Adjust gap or font-size if needed */
+    font-size: 10px;
+    height: 80%;
+    margin-block-end: auto;
+  }
+  .placeholderContentWrapper{
+    font-size: 8px;
+  }
+
+  .forminput {
+    /* Adjust width or font-size if needed */
+    font-size: 10px;
+    width: 300px;
+  }
+  .frameParent{
+    font-size: 10px;
+    width: 300px;
+  }
+
+  .button {
+    /* Adjust padding or font-size if needed */
+    font-size: 8px;
+    display: flex;
+    flex-direction: row;
+    padding: 5px 10px;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+  }
+  .button1 {
+    align-self: stretch;
+    border-radius: var(--br-8xs);
+    border: 1px solid var(--neutral-600);
+    padding: var(--padding-3xs) var(--padding-xl);
+    justify-content: center;
+    font-size: var(--font-size-base);
+    color: var(--neutral-600);
+    cursor: pointer;
+  }
+
+}
+
+@media screen and (max-width: 576px) {
+  .rectangleParent{
+    left: 36px;
+    top: 30px;
+  }
+  .forminputParent {
+    /* Adjust gap or font-size if needed */
+    font-size: 8px;
+  }
+  .placeholderContentWrapper{
+    font-size: 8px;
+  }
+  .forminput {
+    /* Adjust width or font-size if needed */
+    font-size: 8px;
+    width: 250px;
+  }
+
+  /* .button1 {
+    align-self: stretch;
+    border-radius: var(--br-8xs);
+    border: 1px solid var(--neutral-600);
+    padding: 5px 10px;
+    justify-content: center;
+    font-size: var(--font-size-base);
+    color: var(--neutral-600);
+    cursor: pointer;
+  } */
+
+  .formtitleParent {
+    /* Adjust gap or font-size if needed */
+    
+    
+
+  }
+
+  .frameParent {
+    font-size: 8px;
+    width: 250px;
+    /* Adjust gap or font-size if needed */
+  }
+  .lineParent{
+    width: 250px;
+  }
+}
